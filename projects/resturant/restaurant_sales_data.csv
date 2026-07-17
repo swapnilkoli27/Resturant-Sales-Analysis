@@ -1,0 +1,501 @@
+Transaction_ID,Date,Time_Of_Day,Item_Name,Category,Quantity,Unit_Price,Total_Amount,Payment_Method,Rating
+TXN-1001,2026-06-22,Snack,Pizza,Mains,3,12.0,36.0,Cash,5
+TXN-1002,2026-06-15,Lunch,Taco,Mains,4,7.0,28.0,Cash,5
+TXN-1003,2026-07-07,Snack,Taco,Mains,2,7.0,14.0,Credit Card,3
+TXN-1004,2026-07-09,Lunch,Tea,Beverages,3,2.5,7.5,Mobile Wallet,4
+TXN-1005,2026-06-21,Lunch,Shake,Desserts,2,4.5,9.0,Credit Card,3
+TXN-1006,2026-07-09,Dinner,Shake,Desserts,3,4.5,13.5,Mobile Wallet,3
+TXN-1007,2026-07-11,Dinner,Soda,Beverages,3,2.0,6.0,Mobile Wallet,3
+TXN-1008,2026-07-09,Lunch,Pizza,Mains,2,12.0,24.0,Cash,4
+TXN-1009,2026-06-20,Lunch,Shake,Desserts,3,4.5,13.5,Mobile Wallet,4
+TXN-1010,2026-07-02,Lunch,Taco,Mains,2,7.0,14.0,Credit Card,4
+TXN-1011,2026-07-06,Lunch,Cookie,Desserts,2,3.0,6.0,Cash,3
+TXN-1012,2026-06-17,Snack,Shake,Desserts,3,4.5,13.5,Mobile Wallet,4
+TXN-1013,2026-06-27,Lunch,Fries,Appetizers,4,4.0,16.0,Credit Card,3
+TXN-1014,2026-07-08,Snack,Fries,Appetizers,3,4.0,12.0,Credit Card,4
+TXN-1015,2026-06-16,Lunch,Salad,Appetizers,4,6.0,24.0,Cash,5
+TXN-1016,2026-07-03,Dinner,Fries,Appetizers,4,4.0,16.0,Mobile Wallet,4
+TXN-1017,2026-07-06,Snack,Cookie,Desserts,1,3.0,3.0,Mobile Wallet,4
+TXN-1018,2026-06-28,Lunch,Cake,Desserts,3,5.5,16.5,Mobile Wallet,5
+TXN-1019,2026-07-01,Snack,Cookie,Desserts,2,3.0,6.0,Credit Card,5
+TXN-1020,2026-07-09,Snack,Salad,Appetizers,3,6.0,18.0,Cash,5
+TXN-1021,2026-06-18,Dinner,Shake,Desserts,1,4.5,4.5,Cash,3
+TXN-1022,2026-06-17,Lunch,Fries,Appetizers,1,4.0,4.0,Mobile Wallet,3
+TXN-1023,2026-07-02,Snack,Fries,Appetizers,4,4.0,16.0,Mobile Wallet,4
+TXN-1024,2026-07-07,Snack,Fries,Appetizers,2,4.0,8.0,Mobile Wallet,4
+TXN-1025,2026-06-18,Lunch,Tea,Beverages,4,2.5,10.0,Credit Card,3
+TXN-1026,2026-06-14,Snack,Fries,Appetizers,2,4.0,8.0,Cash,3
+TXN-1027,2026-06-17,Dinner,Pizza,Mains,3,12.0,36.0,Mobile Wallet,4
+TXN-1028,2026-07-08,Dinner,Fries,Appetizers,2,4.0,8.0,Cash,4
+TXN-1029,2026-06-18,Dinner,Soda,Beverages,1,2.0,2.0,Credit Card,4
+TXN-1030,2026-07-06,Lunch,Tea,Beverages,1,2.5,2.5,Cash,4
+TXN-1031,2026-06-21,Dinner,Cake,Desserts,2,5.5,11.0,Cash,4
+TXN-1032,2026-06-21,Snack,Soup,Appetizers,4,5.0,20.0,Cash,3
+TXN-1033,2026-06-20,Dinner,Pizza,Mains,2,12.0,24.0,Cash,4
+TXN-1034,2026-06-15,Dinner,Burger,Mains,4,8.5,34.0,Credit Card,4
+TXN-1035,2026-06-24,Snack,Soda,Beverages,2,2.0,4.0,Mobile Wallet,5
+TXN-1036,2026-06-16,Snack,Pasta,Mains,1,10.5,10.5,Mobile Wallet,3
+TXN-1037,2026-07-12,Snack,Taco,Mains,1,7.0,7.0,Cash,5
+TXN-1038,2026-07-13,Snack,Soup,Appetizers,1,5.0,5.0,Mobile Wallet,3
+TXN-1039,2026-07-14,Snack,Ramen,Mains,3,11.0,33.0,Mobile Wallet,4
+TXN-1040,2026-06-19,Dinner,Soup,Appetizers,4,5.0,20.0,Credit Card,4
+TXN-1041,2026-07-04,Lunch,Pizza,Mains,4,12.0,48.0,Mobile Wallet,3
+TXN-1042,2026-07-12,Lunch,Cake,Desserts,3,5.5,16.5,Credit Card,4
+TXN-1043,2026-07-04,Lunch,Soup,Appetizers,3,5.0,15.0,Mobile Wallet,5
+TXN-1044,2026-07-13,Lunch,Cookie,Desserts,1,3.0,3.0,Cash,5
+TXN-1045,2026-07-04,Dinner,Soup,Appetizers,3,5.0,15.0,Cash,5
+TXN-1046,2026-06-22,Snack,Cookie,Desserts,4,3.0,12.0,Credit Card,4
+TXN-1047,2026-07-09,Dinner,Pizza,Mains,3,12.0,36.0,Cash,5
+TXN-1048,2026-07-01,Lunch,Tea,Beverages,4,2.5,10.0,Mobile Wallet,3
+TXN-1049,2026-06-28,Dinner,Pasta,Mains,2,10.5,21.0,Credit Card,3
+TXN-1050,2026-07-06,Snack,Cake,Desserts,2,5.5,11.0,Credit Card,5
+TXN-1051,2026-07-10,Dinner,Salad,Appetizers,2,6.0,12.0,Cash,3
+TXN-1052,2026-06-23,Snack,Shake,Desserts,2,4.5,9.0,Cash,4
+TXN-1053,2026-06-21,Dinner,Ramen,Mains,2,11.0,22.0,Cash,3
+TXN-1054,2026-06-25,Lunch,Burger,Mains,4,8.5,34.0,Credit Card,4
+TXN-1055,2026-06-15,Dinner,Tea,Beverages,3,2.5,7.5,Cash,5
+TXN-1056,2026-07-04,Snack,Cake,Desserts,1,5.5,5.5,Credit Card,4
+TXN-1057,2026-06-22,Dinner,Ramen,Mains,2,11.0,22.0,Cash,5
+TXN-1058,2026-06-17,Dinner,Soup,Appetizers,4,5.0,20.0,Mobile Wallet,4
+TXN-1059,2026-07-06,Dinner,Pasta,Mains,3,10.5,31.5,Mobile Wallet,4
+TXN-1060,2026-07-06,Snack,Salad,Appetizers,4,6.0,24.0,Cash,5
+TXN-1061,2026-06-24,Dinner,Shake,Desserts,1,4.5,4.5,Mobile Wallet,5
+TXN-1062,2026-06-29,Snack,Shake,Desserts,4,4.5,18.0,Credit Card,5
+TXN-1063,2026-06-24,Snack,Fries,Appetizers,1,4.0,4.0,Mobile Wallet,4
+TXN-1064,2026-06-22,Lunch,Burger,Mains,3,8.5,25.5,Cash,3
+TXN-1065,2026-06-29,Snack,Tea,Beverages,1,2.5,2.5,Mobile Wallet,3
+TXN-1066,2026-06-22,Snack,Coffee,Beverages,4,3.5,14.0,Cash,3
+TXN-1067,2026-07-10,Dinner,Soda,Beverages,2,2.0,4.0,Cash,5
+TXN-1068,2026-06-19,Snack,Salad,Appetizers,4,6.0,24.0,Mobile Wallet,5
+TXN-1069,2026-07-11,Lunch,Shake,Desserts,4,4.5,18.0,Mobile Wallet,4
+TXN-1070,2026-07-11,Snack,Coffee,Beverages,2,3.5,7.0,Credit Card,5
+TXN-1071,2026-06-17,Lunch,Soup,Appetizers,4,5.0,20.0,Credit Card,4
+TXN-1072,2026-06-19,Dinner,Cookie,Desserts,1,3.0,3.0,Mobile Wallet,3
+TXN-1073,2026-06-28,Dinner,Salad,Appetizers,4,6.0,24.0,Credit Card,3
+TXN-1074,2026-07-13,Lunch,Soup,Appetizers,4,5.0,20.0,Mobile Wallet,4
+TXN-1075,2026-06-24,Dinner,Soda,Beverages,3,2.0,6.0,Mobile Wallet,5
+TXN-1076,2026-06-23,Lunch,Soup,Appetizers,2,5.0,10.0,Credit Card,4
+TXN-1077,2026-07-11,Lunch,Tea,Beverages,2,2.5,5.0,Mobile Wallet,5
+TXN-1078,2026-06-17,Lunch,Ramen,Mains,1,11.0,11.0,Credit Card,3
+TXN-1079,2026-06-25,Dinner,Pasta,Mains,4,10.5,42.0,Credit Card,4
+TXN-1080,2026-07-10,Lunch,Shake,Desserts,3,4.5,13.5,Mobile Wallet,5
+TXN-1081,2026-07-04,Snack,Pasta,Mains,2,10.5,21.0,Cash,3
+TXN-1082,2026-07-04,Lunch,Salad,Appetizers,1,6.0,6.0,Credit Card,5
+TXN-1083,2026-06-29,Dinner,Taco,Mains,2,7.0,14.0,Cash,5
+TXN-1084,2026-06-18,Dinner,Burger,Mains,3,8.5,25.5,Mobile Wallet,5
+TXN-1085,2026-06-17,Snack,Coffee,Beverages,2,3.5,7.0,Cash,3
+TXN-1086,2026-07-10,Lunch,Cookie,Desserts,1,3.0,3.0,Credit Card,5
+TXN-1087,2026-06-17,Dinner,Tea,Beverages,3,2.5,7.5,Cash,4
+TXN-1088,2026-06-26,Dinner,Soda,Beverages,4,2.0,8.0,Mobile Wallet,3
+TXN-1089,2026-07-04,Dinner,Soda,Beverages,3,2.0,6.0,Credit Card,4
+TXN-1090,2026-07-10,Dinner,Shake,Desserts,2,4.5,9.0,Cash,4
+TXN-1091,2026-06-30,Dinner,Coffee,Beverages,1,3.5,3.5,Cash,4
+TXN-1092,2026-07-13,Dinner,Shake,Desserts,3,4.5,13.5,Mobile Wallet,3
+TXN-1093,2026-07-08,Snack,Salad,Appetizers,2,6.0,12.0,Cash,5
+TXN-1094,2026-06-28,Dinner,Tea,Beverages,4,2.5,10.0,Cash,4
+TXN-1095,2026-06-30,Dinner,Soup,Appetizers,3,5.0,15.0,Credit Card,5
+TXN-1096,2026-06-23,Lunch,Shake,Desserts,4,4.5,18.0,Cash,5
+TXN-1097,2026-07-08,Snack,Soup,Appetizers,1,5.0,5.0,Cash,3
+TXN-1098,2026-06-23,Snack,Fries,Appetizers,4,4.0,16.0,Mobile Wallet,4
+TXN-1099,2026-06-22,Dinner,Burger,Mains,3,8.5,25.5,Cash,5
+TXN-1100,2026-06-16,Snack,Soup,Appetizers,1,5.0,5.0,Cash,5
+TXN-1101,2026-07-03,Dinner,Soda,Beverages,1,2.0,2.0,Credit Card,4
+TXN-1102,2026-07-12,Lunch,Salad,Appetizers,3,6.0,18.0,Credit Card,4
+TXN-1103,2026-06-19,Snack,Taco,Mains,1,7.0,7.0,Credit Card,3
+TXN-1104,2026-07-04,Snack,Salad,Appetizers,4,6.0,24.0,Cash,5
+TXN-1105,2026-06-24,Dinner,Coffee,Beverages,4,3.5,14.0,Mobile Wallet,5
+TXN-1106,2026-07-09,Lunch,Taco,Mains,1,7.0,7.0,Credit Card,5
+TXN-1107,2026-06-20,Lunch,Burger,Mains,2,8.5,17.0,Cash,4
+TXN-1108,2026-06-23,Dinner,Tea,Beverages,4,2.5,10.0,Mobile Wallet,4
+TXN-1109,2026-07-14,Snack,Soda,Beverages,2,2.0,4.0,Mobile Wallet,5
+TXN-1110,2026-07-02,Lunch,Soup,Appetizers,1,5.0,5.0,Credit Card,3
+TXN-1111,2026-07-10,Snack,Pizza,Mains,2,12.0,24.0,Mobile Wallet,4
+TXN-1112,2026-07-07,Dinner,Soda,Beverages,4,2.0,8.0,Credit Card,5
+TXN-1113,2026-07-03,Dinner,Coffee,Beverages,1,3.5,3.5,Mobile Wallet,4
+TXN-1114,2026-06-22,Snack,Cake,Desserts,1,5.5,5.5,Mobile Wallet,3
+TXN-1115,2026-07-09,Snack,Cookie,Desserts,1,3.0,3.0,Mobile Wallet,4
+TXN-1116,2026-07-05,Dinner,Cake,Desserts,4,5.5,22.0,Credit Card,4
+TXN-1117,2026-07-12,Dinner,Shake,Desserts,1,4.5,4.5,Mobile Wallet,4
+TXN-1118,2026-07-11,Dinner,Cookie,Desserts,4,3.0,12.0,Cash,4
+TXN-1119,2026-07-09,Snack,Shake,Desserts,1,4.5,4.5,Cash,5
+TXN-1120,2026-06-21,Snack,Coffee,Beverages,1,3.5,3.5,Credit Card,5
+TXN-1121,2026-06-23,Dinner,Soda,Beverages,2,2.0,4.0,Credit Card,5
+TXN-1122,2026-07-05,Lunch,Soda,Beverages,1,2.0,2.0,Mobile Wallet,3
+TXN-1123,2026-07-02,Lunch,Cookie,Desserts,1,3.0,3.0,Cash,4
+TXN-1124,2026-07-14,Snack,Burger,Mains,4,8.5,34.0,Mobile Wallet,4
+TXN-1125,2026-06-22,Lunch,Coffee,Beverages,4,3.5,14.0,Credit Card,3
+TXN-1126,2026-07-09,Snack,Salad,Appetizers,3,6.0,18.0,Credit Card,3
+TXN-1127,2026-07-11,Snack,Cookie,Desserts,3,3.0,9.0,Credit Card,3
+TXN-1128,2026-06-26,Snack,Tea,Beverages,4,2.5,10.0,Credit Card,4
+TXN-1129,2026-07-03,Dinner,Cake,Desserts,2,5.5,11.0,Cash,4
+TXN-1130,2026-06-27,Snack,Tea,Beverages,4,2.5,10.0,Cash,4
+TXN-1131,2026-07-12,Dinner,Burger,Mains,3,8.5,25.5,Cash,5
+TXN-1132,2026-06-28,Lunch,Soda,Beverages,2,2.0,4.0,Credit Card,4
+TXN-1133,2026-07-04,Dinner,Cookie,Desserts,4,3.0,12.0,Mobile Wallet,5
+TXN-1134,2026-07-12,Snack,Coffee,Beverages,4,3.5,14.0,Cash,3
+TXN-1135,2026-06-28,Snack,Cake,Desserts,1,5.5,5.5,Mobile Wallet,3
+TXN-1136,2026-07-12,Dinner,Soda,Beverages,3,2.0,6.0,Cash,4
+TXN-1137,2026-06-19,Dinner,Shake,Desserts,4,4.5,18.0,Mobile Wallet,5
+TXN-1138,2026-06-17,Dinner,Salad,Appetizers,2,6.0,12.0,Mobile Wallet,5
+TXN-1139,2026-06-22,Dinner,Soup,Appetizers,2,5.0,10.0,Credit Card,4
+TXN-1140,2026-07-06,Lunch,Ramen,Mains,3,11.0,33.0,Credit Card,4
+TXN-1141,2026-07-07,Dinner,Cookie,Desserts,4,3.0,12.0,Cash,4
+TXN-1142,2026-06-27,Snack,Soda,Beverages,2,2.0,4.0,Credit Card,5
+TXN-1143,2026-06-22,Snack,Cake,Desserts,4,5.5,22.0,Mobile Wallet,3
+TXN-1144,2026-07-04,Snack,Coffee,Beverages,2,3.5,7.0,Cash,5
+TXN-1145,2026-07-05,Snack,Cookie,Desserts,2,3.0,6.0,Mobile Wallet,3
+TXN-1146,2026-07-03,Lunch,Shake,Desserts,1,4.5,4.5,Cash,4
+TXN-1147,2026-06-20,Snack,Cookie,Desserts,4,3.0,12.0,Credit Card,5
+TXN-1148,2026-07-14,Dinner,Cake,Desserts,3,5.5,16.5,Mobile Wallet,4
+TXN-1149,2026-06-19,Snack,Ramen,Mains,1,11.0,11.0,Mobile Wallet,5
+TXN-1150,2026-06-17,Dinner,Tea,Beverages,3,2.5,7.5,Mobile Wallet,3
+TXN-1151,2026-07-03,Snack,Coffee,Beverages,3,3.5,10.5,Credit Card,3
+TXN-1152,2026-07-04,Snack,Soup,Appetizers,1,5.0,5.0,Cash,5
+TXN-1153,2026-07-05,Lunch,Ramen,Mains,3,11.0,33.0,Cash,3
+TXN-1154,2026-06-18,Snack,Shake,Desserts,1,4.5,4.5,Cash,4
+TXN-1155,2026-07-03,Lunch,Coffee,Beverages,4,3.5,14.0,Credit Card,5
+TXN-1156,2026-06-22,Dinner,Ramen,Mains,4,11.0,44.0,Cash,4
+TXN-1157,2026-06-18,Snack,Soda,Beverages,3,2.0,6.0,Mobile Wallet,4
+TXN-1158,2026-06-21,Dinner,Ramen,Mains,3,11.0,33.0,Cash,5
+TXN-1159,2026-06-16,Lunch,Fries,Appetizers,1,4.0,4.0,Mobile Wallet,3
+TXN-1160,2026-07-03,Lunch,Taco,Mains,2,7.0,14.0,Credit Card,3
+TXN-1161,2026-06-19,Lunch,Pasta,Mains,2,10.5,21.0,Cash,5
+TXN-1162,2026-06-26,Dinner,Burger,Mains,1,8.5,8.5,Cash,3
+TXN-1163,2026-07-08,Lunch,Cake,Desserts,2,5.5,11.0,Mobile Wallet,3
+TXN-1164,2026-07-01,Dinner,Coffee,Beverages,3,3.5,10.5,Mobile Wallet,3
+TXN-1165,2026-06-29,Lunch,Taco,Mains,3,7.0,21.0,Credit Card,4
+TXN-1166,2026-06-30,Dinner,Tea,Beverages,1,2.5,2.5,Cash,3
+TXN-1167,2026-06-17,Snack,Cookie,Desserts,2,3.0,6.0,Mobile Wallet,5
+TXN-1168,2026-06-29,Dinner,Shake,Desserts,3,4.5,13.5,Cash,5
+TXN-1169,2026-06-28,Lunch,Taco,Mains,2,7.0,14.0,Credit Card,4
+TXN-1170,2026-07-08,Dinner,Coffee,Beverages,4,3.5,14.0,Credit Card,5
+TXN-1171,2026-07-06,Lunch,Shake,Desserts,2,4.5,9.0,Cash,3
+TXN-1172,2026-07-10,Lunch,Soda,Beverages,3,2.0,6.0,Mobile Wallet,5
+TXN-1173,2026-06-28,Snack,Cookie,Desserts,1,3.0,3.0,Credit Card,5
+TXN-1174,2026-06-26,Snack,Pasta,Mains,3,10.5,31.5,Cash,3
+TXN-1175,2026-06-26,Lunch,Soda,Beverages,1,2.0,2.0,Credit Card,5
+TXN-1176,2026-07-04,Snack,Soup,Appetizers,1,5.0,5.0,Credit Card,3
+TXN-1177,2026-07-14,Lunch,Soup,Appetizers,3,5.0,15.0,Cash,3
+TXN-1178,2026-07-08,Lunch,Soda,Beverages,2,2.0,4.0,Mobile Wallet,5
+TXN-1179,2026-06-29,Dinner,Soup,Appetizers,4,5.0,20.0,Credit Card,5
+TXN-1180,2026-07-12,Lunch,Cookie,Desserts,1,3.0,3.0,Mobile Wallet,3
+TXN-1181,2026-07-06,Snack,Pasta,Mains,4,10.5,42.0,Credit Card,4
+TXN-1182,2026-06-26,Dinner,Cake,Desserts,1,5.5,5.5,Mobile Wallet,5
+TXN-1183,2026-06-16,Snack,Tea,Beverages,3,2.5,7.5,Cash,3
+TXN-1184,2026-07-09,Dinner,Soup,Appetizers,2,5.0,10.0,Credit Card,4
+TXN-1185,2026-07-08,Lunch,Pizza,Mains,4,12.0,48.0,Credit Card,5
+TXN-1186,2026-06-17,Snack,Fries,Appetizers,3,4.0,12.0,Cash,4
+TXN-1187,2026-07-12,Dinner,Ramen,Mains,1,11.0,11.0,Mobile Wallet,4
+TXN-1188,2026-06-26,Lunch,Coffee,Beverages,1,3.5,3.5,Mobile Wallet,4
+TXN-1189,2026-07-11,Dinner,Cake,Desserts,4,5.5,22.0,Mobile Wallet,4
+TXN-1190,2026-07-08,Dinner,Ramen,Mains,3,11.0,33.0,Cash,3
+TXN-1191,2026-07-13,Snack,Taco,Mains,2,7.0,14.0,Mobile Wallet,3
+TXN-1192,2026-06-23,Snack,Salad,Appetizers,2,6.0,12.0,Cash,5
+TXN-1193,2026-06-29,Snack,Burger,Mains,4,8.5,34.0,Credit Card,5
+TXN-1194,2026-06-19,Dinner,Cookie,Desserts,3,3.0,9.0,Credit Card,5
+TXN-1195,2026-06-26,Dinner,Shake,Desserts,1,4.5,4.5,Credit Card,4
+TXN-1196,2026-07-11,Snack,Pizza,Mains,3,12.0,36.0,Cash,5
+TXN-1197,2026-06-29,Lunch,Coffee,Beverages,1,3.5,3.5,Credit Card,5
+TXN-1198,2026-06-16,Dinner,Tea,Beverages,2,2.5,5.0,Mobile Wallet,3
+TXN-1199,2026-07-07,Snack,Salad,Appetizers,2,6.0,12.0,Mobile Wallet,5
+TXN-1200,2026-07-14,Dinner,Soup,Appetizers,3,5.0,15.0,Credit Card,5
+TXN-1201,2026-06-25,Snack,Pasta,Mains,1,10.5,10.5,Credit Card,4
+TXN-1202,2026-06-24,Snack,Cookie,Desserts,2,3.0,6.0,Cash,4
+TXN-1203,2026-06-19,Lunch,Cookie,Desserts,4,3.0,12.0,Credit Card,5
+TXN-1204,2026-07-11,Snack,Tea,Beverages,3,2.5,7.5,Mobile Wallet,5
+TXN-1205,2026-06-15,Lunch,Ramen,Mains,3,11.0,33.0,Cash,4
+TXN-1206,2026-06-19,Dinner,Soda,Beverages,2,2.0,4.0,Cash,5
+TXN-1207,2026-07-04,Lunch,Pasta,Mains,2,10.5,21.0,Cash,5
+TXN-1208,2026-06-16,Snack,Fries,Appetizers,4,4.0,16.0,Mobile Wallet,3
+TXN-1209,2026-07-09,Dinner,Tea,Beverages,3,2.5,7.5,Cash,5
+TXN-1210,2026-07-13,Snack,Soup,Appetizers,4,5.0,20.0,Mobile Wallet,4
+TXN-1211,2026-07-01,Lunch,Coffee,Beverages,4,3.5,14.0,Cash,5
+TXN-1212,2026-07-05,Dinner,Soup,Appetizers,1,5.0,5.0,Mobile Wallet,3
+TXN-1213,2026-07-09,Dinner,Pasta,Mains,1,10.5,10.5,Mobile Wallet,3
+TXN-1214,2026-07-11,Dinner,Soda,Beverages,2,2.0,4.0,Cash,4
+TXN-1215,2026-06-22,Dinner,Ramen,Mains,3,11.0,33.0,Cash,3
+TXN-1216,2026-07-10,Lunch,Cake,Desserts,3,5.5,16.5,Credit Card,4
+TXN-1217,2026-06-29,Lunch,Fries,Appetizers,4,4.0,16.0,Cash,4
+TXN-1218,2026-06-18,Dinner,Salad,Appetizers,4,6.0,24.0,Cash,3
+TXN-1219,2026-06-17,Dinner,Soup,Appetizers,4,5.0,20.0,Mobile Wallet,5
+TXN-1220,2026-07-07,Dinner,Taco,Mains,2,7.0,14.0,Cash,5
+TXN-1221,2026-06-20,Lunch,Cake,Desserts,4,5.5,22.0,Mobile Wallet,4
+TXN-1222,2026-06-27,Snack,Taco,Mains,1,7.0,7.0,Credit Card,4
+TXN-1223,2026-06-25,Lunch,Cookie,Desserts,1,3.0,3.0,Mobile Wallet,5
+TXN-1224,2026-06-18,Snack,Taco,Mains,3,7.0,21.0,Credit Card,5
+TXN-1225,2026-07-07,Lunch,Fries,Appetizers,4,4.0,16.0,Cash,3
+TXN-1226,2026-06-20,Lunch,Soda,Beverages,3,2.0,6.0,Cash,4
+TXN-1227,2026-07-11,Dinner,Cookie,Desserts,4,3.0,12.0,Cash,5
+TXN-1228,2026-07-11,Snack,Soup,Appetizers,3,5.0,15.0,Credit Card,4
+TXN-1229,2026-07-13,Dinner,Pasta,Mains,4,10.5,42.0,Credit Card,4
+TXN-1230,2026-06-26,Lunch,Soup,Appetizers,4,5.0,20.0,Mobile Wallet,4
+TXN-1231,2026-07-02,Lunch,Ramen,Mains,2,11.0,22.0,Cash,4
+TXN-1232,2026-07-04,Lunch,Shake,Desserts,4,4.5,18.0,Mobile Wallet,4
+TXN-1233,2026-07-08,Dinner,Shake,Desserts,1,4.5,4.5,Credit Card,5
+TXN-1234,2026-06-26,Snack,Pizza,Mains,4,12.0,48.0,Mobile Wallet,3
+TXN-1235,2026-06-16,Lunch,Burger,Mains,4,8.5,34.0,Mobile Wallet,4
+TXN-1236,2026-07-04,Dinner,Shake,Desserts,1,4.5,4.5,Credit Card,4
+TXN-1237,2026-07-01,Dinner,Soda,Beverages,2,2.0,4.0,Mobile Wallet,4
+TXN-1238,2026-07-08,Snack,Salad,Appetizers,1,6.0,6.0,Credit Card,5
+TXN-1239,2026-07-07,Snack,Pasta,Mains,3,10.5,31.5,Credit Card,5
+TXN-1240,2026-06-18,Lunch,Soda,Beverages,1,2.0,2.0,Mobile Wallet,4
+TXN-1241,2026-07-06,Snack,Pasta,Mains,3,10.5,31.5,Credit Card,4
+TXN-1242,2026-07-10,Lunch,Fries,Appetizers,2,4.0,8.0,Cash,3
+TXN-1243,2026-06-15,Snack,Salad,Appetizers,4,6.0,24.0,Credit Card,4
+TXN-1244,2026-06-17,Snack,Fries,Appetizers,1,4.0,4.0,Mobile Wallet,4
+TXN-1245,2026-06-19,Lunch,Coffee,Beverages,1,3.5,3.5,Credit Card,4
+TXN-1246,2026-07-09,Snack,Cake,Desserts,2,5.5,11.0,Cash,3
+TXN-1247,2026-06-20,Snack,Soup,Appetizers,2,5.0,10.0,Cash,4
+TXN-1248,2026-06-21,Dinner,Cake,Desserts,3,5.5,16.5,Cash,5
+TXN-1249,2026-07-01,Snack,Cookie,Desserts,1,3.0,3.0,Mobile Wallet,3
+TXN-1250,2026-07-11,Lunch,Fries,Appetizers,3,4.0,12.0,Cash,3
+TXN-1251,2026-07-09,Snack,Cookie,Desserts,2,3.0,6.0,Mobile Wallet,3
+TXN-1252,2026-07-05,Lunch,Tea,Beverages,3,2.5,7.5,Mobile Wallet,4
+TXN-1253,2026-07-06,Dinner,Shake,Desserts,1,4.5,4.5,Credit Card,4
+TXN-1254,2026-07-04,Snack,Soda,Beverages,3,2.0,6.0,Credit Card,5
+TXN-1255,2026-07-09,Snack,Shake,Desserts,2,4.5,9.0,Cash,4
+TXN-1256,2026-06-23,Lunch,Soup,Appetizers,1,5.0,5.0,Cash,3
+TXN-1257,2026-06-22,Dinner,Shake,Desserts,4,4.5,18.0,Mobile Wallet,5
+TXN-1258,2026-06-30,Dinner,Cake,Desserts,2,5.5,11.0,Credit Card,4
+TXN-1259,2026-07-01,Lunch,Pizza,Mains,4,12.0,48.0,Mobile Wallet,4
+TXN-1260,2026-06-30,Snack,Pizza,Mains,3,12.0,36.0,Mobile Wallet,4
+TXN-1261,2026-07-12,Lunch,Cookie,Desserts,1,3.0,3.0,Credit Card,5
+TXN-1262,2026-06-16,Snack,Shake,Desserts,3,4.5,13.5,Mobile Wallet,3
+TXN-1263,2026-06-17,Dinner,Cookie,Desserts,3,3.0,9.0,Mobile Wallet,4
+TXN-1264,2026-06-27,Dinner,Burger,Mains,1,8.5,8.5,Mobile Wallet,4
+TXN-1265,2026-06-30,Lunch,Salad,Appetizers,4,6.0,24.0,Cash,5
+TXN-1266,2026-06-19,Snack,Shake,Desserts,4,4.5,18.0,Cash,4
+TXN-1267,2026-07-04,Dinner,Cake,Desserts,4,5.5,22.0,Mobile Wallet,4
+TXN-1268,2026-06-29,Dinner,Tea,Beverages,3,2.5,7.5,Mobile Wallet,3
+TXN-1269,2026-07-10,Snack,Tea,Beverages,3,2.5,7.5,Mobile Wallet,3
+TXN-1270,2026-07-07,Dinner,Coffee,Beverages,2,3.5,7.0,Cash,5
+TXN-1271,2026-06-16,Lunch,Soda,Beverages,2,2.0,4.0,Cash,3
+TXN-1272,2026-06-19,Lunch,Coffee,Beverages,4,3.5,14.0,Credit Card,5
+TXN-1273,2026-07-07,Lunch,Tea,Beverages,1,2.5,2.5,Mobile Wallet,4
+TXN-1274,2026-06-25,Snack,Tea,Beverages,4,2.5,10.0,Credit Card,5
+TXN-1275,2026-07-04,Lunch,Cookie,Desserts,3,3.0,9.0,Credit Card,5
+TXN-1276,2026-07-09,Lunch,Cake,Desserts,3,5.5,16.5,Mobile Wallet,5
+TXN-1277,2026-06-26,Snack,Coffee,Beverages,4,3.5,14.0,Credit Card,4
+TXN-1278,2026-07-13,Dinner,Taco,Mains,4,7.0,28.0,Cash,4
+TXN-1279,2026-06-26,Dinner,Pasta,Mains,1,10.5,10.5,Mobile Wallet,4
+TXN-1280,2026-07-14,Dinner,Salad,Appetizers,3,6.0,18.0,Cash,3
+TXN-1281,2026-07-06,Snack,Salad,Appetizers,1,6.0,6.0,Cash,3
+TXN-1282,2026-07-07,Snack,Ramen,Mains,3,11.0,33.0,Cash,3
+TXN-1283,2026-06-30,Dinner,Soup,Appetizers,4,5.0,20.0,Credit Card,4
+TXN-1284,2026-07-02,Lunch,Pizza,Mains,2,12.0,24.0,Cash,4
+TXN-1285,2026-07-10,Snack,Salad,Appetizers,4,6.0,24.0,Credit Card,3
+TXN-1286,2026-07-14,Dinner,Pasta,Mains,1,10.5,10.5,Mobile Wallet,5
+TXN-1287,2026-06-23,Lunch,Soda,Beverages,4,2.0,8.0,Credit Card,3
+TXN-1288,2026-07-07,Snack,Tea,Beverages,3,2.5,7.5,Credit Card,4
+TXN-1289,2026-07-11,Dinner,Salad,Appetizers,4,6.0,24.0,Cash,4
+TXN-1290,2026-06-30,Lunch,Burger,Mains,2,8.5,17.0,Cash,4
+TXN-1291,2026-07-09,Dinner,Soda,Beverages,4,2.0,8.0,Mobile Wallet,5
+TXN-1292,2026-07-07,Snack,Pasta,Mains,3,10.5,31.5,Cash,4
+TXN-1293,2026-07-06,Snack,Cake,Desserts,4,5.5,22.0,Credit Card,5
+TXN-1294,2026-07-04,Lunch,Pasta,Mains,3,10.5,31.5,Credit Card,3
+TXN-1295,2026-06-28,Dinner,Tea,Beverages,3,2.5,7.5,Mobile Wallet,5
+TXN-1296,2026-07-01,Snack,Salad,Appetizers,1,6.0,6.0,Credit Card,3
+TXN-1297,2026-07-03,Lunch,Pizza,Mains,2,12.0,24.0,Credit Card,5
+TXN-1298,2026-07-07,Lunch,Soda,Beverages,2,2.0,4.0,Mobile Wallet,4
+TXN-1299,2026-07-01,Snack,Ramen,Mains,2,11.0,22.0,Cash,5
+TXN-1300,2026-07-07,Dinner,Tea,Beverages,3,2.5,7.5,Cash,5
+TXN-1301,2026-06-16,Snack,Fries,Appetizers,1,4.0,4.0,Cash,5
+TXN-1302,2026-06-16,Lunch,Pizza,Mains,4,12.0,48.0,Cash,5
+TXN-1303,2026-06-29,Lunch,Coffee,Beverages,4,3.5,14.0,Mobile Wallet,5
+TXN-1304,2026-06-18,Dinner,Fries,Appetizers,3,4.0,12.0,Mobile Wallet,3
+TXN-1305,2026-06-24,Snack,Salad,Appetizers,1,6.0,6.0,Mobile Wallet,4
+TXN-1306,2026-06-29,Dinner,Soda,Beverages,2,2.0,4.0,Cash,5
+TXN-1307,2026-07-03,Lunch,Pizza,Mains,4,12.0,48.0,Cash,3
+TXN-1308,2026-06-22,Dinner,Ramen,Mains,1,11.0,11.0,Credit Card,3
+TXN-1309,2026-07-01,Snack,Salad,Appetizers,2,6.0,12.0,Mobile Wallet,4
+TXN-1310,2026-07-13,Snack,Cake,Desserts,3,5.5,16.5,Cash,4
+TXN-1311,2026-07-02,Snack,Shake,Desserts,1,4.5,4.5,Cash,5
+TXN-1312,2026-06-16,Snack,Tea,Beverages,4,2.5,10.0,Credit Card,5
+TXN-1313,2026-06-28,Dinner,Cookie,Desserts,4,3.0,12.0,Cash,5
+TXN-1314,2026-06-24,Dinner,Soda,Beverages,2,2.0,4.0,Cash,5
+TXN-1315,2026-06-27,Lunch,Coffee,Beverages,2,3.5,7.0,Credit Card,5
+TXN-1316,2026-06-17,Lunch,Ramen,Mains,3,11.0,33.0,Cash,4
+TXN-1317,2026-07-11,Snack,Tea,Beverages,1,2.5,2.5,Mobile Wallet,5
+TXN-1318,2026-07-12,Lunch,Soup,Appetizers,2,5.0,10.0,Cash,3
+TXN-1319,2026-07-07,Lunch,Ramen,Mains,2,11.0,22.0,Credit Card,3
+TXN-1320,2026-06-29,Dinner,Shake,Desserts,4,4.5,18.0,Credit Card,4
+TXN-1321,2026-06-29,Snack,Cookie,Desserts,4,3.0,12.0,Credit Card,4
+TXN-1322,2026-06-27,Lunch,Soup,Appetizers,3,5.0,15.0,Mobile Wallet,3
+TXN-1323,2026-06-24,Dinner,Pasta,Mains,4,10.5,42.0,Cash,4
+TXN-1324,2026-06-23,Snack,Soup,Appetizers,3,5.0,15.0,Mobile Wallet,4
+TXN-1325,2026-06-20,Snack,Soda,Beverages,3,2.0,6.0,Credit Card,3
+TXN-1326,2026-07-10,Snack,Taco,Mains,1,7.0,7.0,Cash,3
+TXN-1327,2026-06-17,Lunch,Soda,Beverages,2,2.0,4.0,Cash,5
+TXN-1328,2026-07-04,Snack,Coffee,Beverages,1,3.5,3.5,Credit Card,5
+TXN-1329,2026-07-02,Lunch,Soda,Beverages,1,2.0,2.0,Cash,5
+TXN-1330,2026-06-15,Snack,Cookie,Desserts,3,3.0,9.0,Mobile Wallet,4
+TXN-1331,2026-07-01,Lunch,Salad,Appetizers,1,6.0,6.0,Mobile Wallet,5
+TXN-1332,2026-07-10,Dinner,Shake,Desserts,3,4.5,13.5,Credit Card,4
+TXN-1333,2026-06-24,Lunch,Fries,Appetizers,2,4.0,8.0,Mobile Wallet,5
+TXN-1334,2026-06-27,Dinner,Pizza,Mains,4,12.0,48.0,Cash,5
+TXN-1335,2026-06-30,Dinner,Burger,Mains,1,8.5,8.5,Mobile Wallet,3
+TXN-1336,2026-07-13,Snack,Burger,Mains,2,8.5,17.0,Credit Card,4
+TXN-1337,2026-07-13,Snack,Pizza,Mains,3,12.0,36.0,Cash,3
+TXN-1338,2026-07-03,Snack,Cake,Desserts,2,5.5,11.0,Credit Card,3
+TXN-1339,2026-07-03,Snack,Cake,Desserts,2,5.5,11.0,Credit Card,4
+TXN-1340,2026-07-01,Lunch,Fries,Appetizers,1,4.0,4.0,Cash,4
+TXN-1341,2026-07-04,Dinner,Salad,Appetizers,3,6.0,18.0,Credit Card,3
+TXN-1342,2026-06-22,Dinner,Shake,Desserts,4,4.5,18.0,Credit Card,3
+TXN-1343,2026-07-10,Lunch,Soda,Beverages,3,2.0,6.0,Cash,4
+TXN-1344,2026-07-08,Dinner,Soup,Appetizers,2,5.0,10.0,Cash,3
+TXN-1345,2026-06-26,Lunch,Pasta,Mains,4,10.5,42.0,Cash,3
+TXN-1346,2026-06-17,Dinner,Coffee,Beverages,4,3.5,14.0,Mobile Wallet,3
+TXN-1347,2026-06-24,Lunch,Shake,Desserts,1,4.5,4.5,Mobile Wallet,5
+TXN-1348,2026-07-06,Lunch,Fries,Appetizers,2,4.0,8.0,Credit Card,4
+TXN-1349,2026-06-17,Dinner,Shake,Desserts,2,4.5,9.0,Credit Card,4
+TXN-1350,2026-06-23,Snack,Soda,Beverages,3,2.0,6.0,Credit Card,5
+TXN-1351,2026-06-19,Dinner,Soup,Appetizers,1,5.0,5.0,Credit Card,5
+TXN-1352,2026-06-25,Snack,Coffee,Beverages,4,3.5,14.0,Mobile Wallet,3
+TXN-1353,2026-06-30,Dinner,Shake,Desserts,2,4.5,9.0,Credit Card,4
+TXN-1354,2026-06-25,Dinner,Tea,Beverages,2,2.5,5.0,Credit Card,3
+TXN-1355,2026-07-06,Snack,Fries,Appetizers,2,4.0,8.0,Credit Card,5
+TXN-1356,2026-07-11,Dinner,Soup,Appetizers,3,5.0,15.0,Mobile Wallet,4
+TXN-1357,2026-06-22,Lunch,Fries,Appetizers,3,4.0,12.0,Mobile Wallet,4
+TXN-1358,2026-07-04,Dinner,Soda,Beverages,4,2.0,8.0,Mobile Wallet,5
+TXN-1359,2026-07-10,Snack,Tea,Beverages,1,2.5,2.5,Mobile Wallet,5
+TXN-1360,2026-07-06,Lunch,Pizza,Mains,2,12.0,24.0,Mobile Wallet,5
+TXN-1361,2026-07-09,Dinner,Taco,Mains,4,7.0,28.0,Cash,3
+TXN-1362,2026-07-01,Snack,Pasta,Mains,2,10.5,21.0,Mobile Wallet,5
+TXN-1363,2026-06-27,Snack,Soup,Appetizers,3,5.0,15.0,Mobile Wallet,5
+TXN-1364,2026-06-30,Dinner,Soup,Appetizers,1,5.0,5.0,Cash,3
+TXN-1365,2026-06-25,Lunch,Soup,Appetizers,3,5.0,15.0,Mobile Wallet,4
+TXN-1366,2026-06-29,Dinner,Shake,Desserts,1,4.5,4.5,Credit Card,3
+TXN-1367,2026-06-15,Lunch,Cake,Desserts,1,5.5,5.5,Mobile Wallet,3
+TXN-1368,2026-07-02,Snack,Fries,Appetizers,2,4.0,8.0,Credit Card,4
+TXN-1369,2026-06-20,Dinner,Soup,Appetizers,2,5.0,10.0,Credit Card,3
+TXN-1370,2026-06-26,Lunch,Soup,Appetizers,4,5.0,20.0,Cash,4
+TXN-1371,2026-07-10,Dinner,Taco,Mains,1,7.0,7.0,Credit Card,3
+TXN-1372,2026-07-06,Snack,Soda,Beverages,3,2.0,6.0,Credit Card,5
+TXN-1373,2026-07-03,Dinner,Tea,Beverages,4,2.5,10.0,Credit Card,5
+TXN-1374,2026-07-14,Lunch,Fries,Appetizers,3,4.0,12.0,Mobile Wallet,3
+TXN-1375,2026-06-23,Dinner,Cake,Desserts,2,5.5,11.0,Mobile Wallet,3
+TXN-1376,2026-07-03,Lunch,Coffee,Beverages,2,3.5,7.0,Credit Card,5
+TXN-1377,2026-06-30,Lunch,Fries,Appetizers,2,4.0,8.0,Credit Card,4
+TXN-1378,2026-06-30,Dinner,Pasta,Mains,1,10.5,10.5,Mobile Wallet,5
+TXN-1379,2026-06-28,Dinner,Coffee,Beverages,4,3.5,14.0,Credit Card,3
+TXN-1380,2026-07-10,Lunch,Taco,Mains,1,7.0,7.0,Credit Card,3
+TXN-1381,2026-07-03,Dinner,Cake,Desserts,4,5.5,22.0,Mobile Wallet,5
+TXN-1382,2026-06-23,Dinner,Taco,Mains,1,7.0,7.0,Mobile Wallet,3
+TXN-1383,2026-06-28,Snack,Tea,Beverages,2,2.5,5.0,Cash,4
+TXN-1384,2026-06-25,Lunch,Ramen,Mains,3,11.0,33.0,Cash,3
+TXN-1385,2026-06-20,Lunch,Cookie,Desserts,4,3.0,12.0,Cash,3
+TXN-1386,2026-07-04,Dinner,Cookie,Desserts,3,3.0,9.0,Mobile Wallet,4
+TXN-1387,2026-07-12,Snack,Cookie,Desserts,3,3.0,9.0,Cash,3
+TXN-1388,2026-07-12,Snack,Soda,Beverages,3,2.0,6.0,Cash,3
+TXN-1389,2026-07-11,Snack,Fries,Appetizers,3,4.0,12.0,Credit Card,4
+TXN-1390,2026-07-05,Dinner,Fries,Appetizers,3,4.0,12.0,Cash,5
+TXN-1391,2026-07-07,Dinner,Ramen,Mains,3,11.0,33.0,Credit Card,5
+TXN-1392,2026-07-05,Dinner,Pizza,Mains,4,12.0,48.0,Cash,5
+TXN-1393,2026-07-11,Dinner,Soda,Beverages,4,2.0,8.0,Credit Card,4
+TXN-1394,2026-07-03,Dinner,Cookie,Desserts,2,3.0,6.0,Mobile Wallet,3
+TXN-1395,2026-06-15,Lunch,Pizza,Mains,4,12.0,48.0,Credit Card,4
+TXN-1396,2026-07-07,Snack,Ramen,Mains,2,11.0,22.0,Credit Card,3
+TXN-1397,2026-06-22,Snack,Cake,Desserts,3,5.5,16.5,Mobile Wallet,3
+TXN-1398,2026-07-08,Lunch,Ramen,Mains,3,11.0,33.0,Credit Card,5
+TXN-1399,2026-06-21,Lunch,Pizza,Mains,1,12.0,12.0,Mobile Wallet,3
+TXN-1400,2026-07-07,Lunch,Soda,Beverages,1,2.0,2.0,Credit Card,5
+TXN-1401,2026-06-22,Snack,Soup,Appetizers,1,5.0,5.0,Cash,3
+TXN-1402,2026-06-19,Lunch,Shake,Desserts,3,4.5,13.5,Mobile Wallet,5
+TXN-1403,2026-07-04,Dinner,Salad,Appetizers,1,6.0,6.0,Credit Card,5
+TXN-1404,2026-07-14,Snack,Fries,Appetizers,2,4.0,8.0,Credit Card,3
+TXN-1405,2026-07-09,Snack,Pizza,Mains,2,12.0,24.0,Credit Card,4
+TXN-1406,2026-06-22,Lunch,Coffee,Beverages,2,3.5,7.0,Cash,5
+TXN-1407,2026-07-12,Dinner,Cookie,Desserts,1,3.0,3.0,Cash,5
+TXN-1408,2026-06-24,Lunch,Fries,Appetizers,4,4.0,16.0,Credit Card,4
+TXN-1409,2026-07-05,Snack,Burger,Mains,4,8.5,34.0,Cash,4
+TXN-1410,2026-07-12,Dinner,Cake,Desserts,4,5.5,22.0,Mobile Wallet,5
+TXN-1411,2026-06-15,Lunch,Soup,Appetizers,1,5.0,5.0,Credit Card,3
+TXN-1412,2026-07-01,Snack,Pizza,Mains,4,12.0,48.0,Mobile Wallet,4
+TXN-1413,2026-06-17,Snack,Tea,Beverages,4,2.5,10.0,Mobile Wallet,3
+TXN-1414,2026-06-17,Lunch,Cake,Desserts,3,5.5,16.5,Cash,5
+TXN-1415,2026-06-24,Snack,Shake,Desserts,1,4.5,4.5,Cash,3
+TXN-1416,2026-06-18,Snack,Salad,Appetizers,4,6.0,24.0,Cash,4
+TXN-1417,2026-07-07,Lunch,Salad,Appetizers,1,6.0,6.0,Cash,4
+TXN-1418,2026-06-20,Snack,Cookie,Desserts,3,3.0,9.0,Credit Card,5
+TXN-1419,2026-07-10,Snack,Pizza,Mains,3,12.0,36.0,Cash,4
+TXN-1420,2026-07-01,Dinner,Ramen,Mains,4,11.0,44.0,Mobile Wallet,3
+TXN-1421,2026-07-09,Snack,Cake,Desserts,3,5.5,16.5,Mobile Wallet,5
+TXN-1422,2026-06-15,Lunch,Burger,Mains,1,8.5,8.5,Credit Card,4
+TXN-1423,2026-07-13,Snack,Soda,Beverages,2,2.0,4.0,Mobile Wallet,5
+TXN-1424,2026-06-22,Snack,Soda,Beverages,3,2.0,6.0,Credit Card,4
+TXN-1425,2026-06-18,Lunch,Taco,Mains,3,7.0,21.0,Cash,3
+TXN-1426,2026-07-13,Dinner,Ramen,Mains,1,11.0,11.0,Credit Card,4
+TXN-1427,2026-06-15,Dinner,Taco,Mains,4,7.0,28.0,Mobile Wallet,4
+TXN-1428,2026-07-03,Lunch,Soup,Appetizers,3,5.0,15.0,Mobile Wallet,5
+TXN-1429,2026-07-14,Lunch,Salad,Appetizers,1,6.0,6.0,Mobile Wallet,4
+TXN-1430,2026-07-09,Snack,Pasta,Mains,1,10.5,10.5,Mobile Wallet,4
+TXN-1431,2026-06-28,Lunch,Burger,Mains,2,8.5,17.0,Mobile Wallet,4
+TXN-1432,2026-07-13,Snack,Pizza,Mains,2,12.0,24.0,Credit Card,4
+TXN-1433,2026-07-01,Dinner,Taco,Mains,1,7.0,7.0,Cash,5
+TXN-1434,2026-06-22,Dinner,Ramen,Mains,2,11.0,22.0,Credit Card,5
+TXN-1435,2026-06-23,Lunch,Shake,Desserts,4,4.5,18.0,Cash,5
+TXN-1436,2026-06-20,Dinner,Burger,Mains,1,8.5,8.5,Credit Card,3
+TXN-1437,2026-06-24,Lunch,Cake,Desserts,4,5.5,22.0,Cash,3
+TXN-1438,2026-06-21,Lunch,Cookie,Desserts,1,3.0,3.0,Mobile Wallet,3
+TXN-1439,2026-07-06,Lunch,Shake,Desserts,1,4.5,4.5,Cash,4
+TXN-1440,2026-06-18,Lunch,Tea,Beverages,2,2.5,5.0,Cash,3
+TXN-1441,2026-06-21,Snack,Burger,Mains,2,8.5,17.0,Mobile Wallet,5
+TXN-1442,2026-07-13,Lunch,Taco,Mains,3,7.0,21.0,Cash,5
+TXN-1443,2026-07-13,Lunch,Soda,Beverages,1,2.0,2.0,Credit Card,3
+TXN-1444,2026-07-11,Dinner,Fries,Appetizers,4,4.0,16.0,Cash,4
+TXN-1445,2026-06-21,Dinner,Soda,Beverages,3,2.0,6.0,Credit Card,3
+TXN-1446,2026-07-05,Dinner,Taco,Mains,2,7.0,14.0,Mobile Wallet,4
+TXN-1447,2026-06-27,Lunch,Pizza,Mains,3,12.0,36.0,Mobile Wallet,5
+TXN-1448,2026-06-27,Dinner,Fries,Appetizers,1,4.0,4.0,Mobile Wallet,4
+TXN-1449,2026-06-27,Lunch,Cookie,Desserts,3,3.0,9.0,Credit Card,5
+TXN-1450,2026-06-16,Dinner,Salad,Appetizers,3,6.0,18.0,Mobile Wallet,3
+TXN-1451,2026-07-06,Snack,Salad,Appetizers,2,6.0,12.0,Mobile Wallet,3
+TXN-1452,2026-06-26,Lunch,Fries,Appetizers,4,4.0,16.0,Mobile Wallet,4
+TXN-1453,2026-07-07,Snack,Cookie,Desserts,1,3.0,3.0,Mobile Wallet,3
+TXN-1454,2026-06-20,Lunch,Soup,Appetizers,3,5.0,15.0,Cash,3
+TXN-1455,2026-06-15,Snack,Salad,Appetizers,4,6.0,24.0,Cash,3
+TXN-1456,2026-07-14,Lunch,Cookie,Desserts,2,3.0,6.0,Cash,5
+TXN-1457,2026-06-17,Snack,Salad,Appetizers,3,6.0,18.0,Credit Card,5
+TXN-1458,2026-06-25,Snack,Pasta,Mains,3,10.5,31.5,Credit Card,5
+TXN-1459,2026-06-20,Snack,Tea,Beverages,3,2.5,7.5,Mobile Wallet,4
+TXN-1460,2026-06-27,Snack,Fries,Appetizers,2,4.0,8.0,Credit Card,3
+TXN-1461,2026-07-07,Snack,Fries,Appetizers,1,4.0,4.0,Cash,3
+TXN-1462,2026-07-05,Dinner,Cookie,Desserts,2,3.0,6.0,Cash,4
+TXN-1463,2026-06-25,Lunch,Burger,Mains,3,8.5,25.5,Mobile Wallet,5
+TXN-1464,2026-06-23,Snack,Shake,Desserts,1,4.5,4.5,Cash,4
+TXN-1465,2026-06-16,Snack,Cake,Desserts,1,5.5,5.5,Credit Card,3
+TXN-1466,2026-06-26,Lunch,Coffee,Beverages,4,3.5,14.0,Credit Card,5
+TXN-1467,2026-06-16,Lunch,Salad,Appetizers,4,6.0,24.0,Credit Card,4
+TXN-1468,2026-06-20,Snack,Pizza,Mains,3,12.0,36.0,Cash,5
+TXN-1469,2026-07-06,Snack,Pasta,Mains,4,10.5,42.0,Cash,5
+TXN-1470,2026-06-18,Lunch,Soda,Beverages,1,2.0,2.0,Credit Card,5
+TXN-1471,2026-06-24,Lunch,Cookie,Desserts,3,3.0,9.0,Credit Card,5
+TXN-1472,2026-06-25,Lunch,Soda,Beverages,1,2.0,2.0,Credit Card,5
+TXN-1473,2026-06-15,Snack,Soda,Beverages,1,2.0,2.0,Credit Card,3
+TXN-1474,2026-07-10,Dinner,Soda,Beverages,3,2.0,6.0,Mobile Wallet,4
+TXN-1475,2026-06-20,Dinner,Taco,Mains,4,7.0,28.0,Credit Card,3
+TXN-1476,2026-06-29,Lunch,Soda,Beverages,3,2.0,6.0,Credit Card,5
+TXN-1477,2026-06-17,Snack,Burger,Mains,1,8.5,8.5,Credit Card,5
+TXN-1478,2026-07-11,Snack,Fries,Appetizers,1,4.0,4.0,Credit Card,5
+TXN-1479,2026-06-30,Dinner,Tea,Beverages,2,2.5,5.0,Mobile Wallet,3
+TXN-1480,2026-06-20,Lunch,Salad,Appetizers,4,6.0,24.0,Cash,3
+TXN-1481,2026-06-21,Snack,Soda,Beverages,4,2.0,8.0,Credit Card,4
+TXN-1482,2026-07-02,Dinner,Pizza,Mains,4,12.0,48.0,Credit Card,5
+TXN-1483,2026-06-18,Lunch,Soda,Beverages,4,2.0,8.0,Mobile Wallet,5
+TXN-1484,2026-07-10,Snack,Pizza,Mains,1,12.0,12.0,Credit Card,4
+TXN-1485,2026-07-03,Lunch,Shake,Desserts,4,4.5,18.0,Cash,4
+TXN-1486,2026-06-16,Dinner,Soda,Beverages,4,2.0,8.0,Mobile Wallet,3
+TXN-1487,2026-07-13,Dinner,Ramen,Mains,3,11.0,33.0,Credit Card,4
+TXN-1488,2026-07-12,Dinner,Shake,Desserts,1,4.5,4.5,Mobile Wallet,4
+TXN-1489,2026-07-04,Lunch,Shake,Desserts,4,4.5,18.0,Credit Card,3
+TXN-1490,2026-07-09,Dinner,Tea,Beverages,4,2.5,10.0,Cash,5
+TXN-1491,2026-07-07,Lunch,Salad,Appetizers,3,6.0,18.0,Mobile Wallet,5
+TXN-1492,2026-07-13,Lunch,Burger,Mains,2,8.5,17.0,Cash,3
+TXN-1493,2026-07-07,Dinner,Soda,Beverages,3,2.0,6.0,Credit Card,5
+TXN-1494,2026-07-05,Dinner,Tea,Beverages,1,2.5,2.5,Credit Card,5
+TXN-1495,2026-07-03,Dinner,Soda,Beverages,4,2.0,8.0,Cash,4
+TXN-1496,2026-06-26,Snack,Pasta,Mains,1,10.5,10.5,Cash,3
+TXN-1497,2026-06-23,Snack,Fries,Appetizers,2,4.0,8.0,Cash,5
+TXN-1498,2026-07-05,Lunch,Ramen,Mains,2,11.0,22.0,Cash,4
+TXN-1499,2026-06-28,Dinner,Cookie,Desserts,3,3.0,9.0,Credit Card,4
+TXN-1500,2026-07-06,Snack,Soup,Appetizers,3,5.0,15.0,Credit Card,5

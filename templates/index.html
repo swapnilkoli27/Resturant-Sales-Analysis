@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Data Science Portal</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<body>
+    <!-- Vertical Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/>
+                </svg>
+            </div>
+            <span class="brand-name">GustoAnalytics</span>
+        </div>
+
+        <nav class="nav-list">
+            <a href="#" class="nav-item active" data-tab="overview-tab">
+                <svg viewBox="0 0 24 24">
+                    <rect x="3" y="3" width="7" height="9" rx="1"/>
+                    <rect x="14" y="3" width="7" height="5" rx="1"/>
+                    <rect x="14" y="12" width="7" height="9" rx="1"/>
+                    <rect x="3" y="16" width="7" height="5" rx="1"/>
+                </svg>
+                Dashboard
+            </a>
+            <a href="#" class="nav-item" data-tab="forecast-tab">
+                <svg viewBox="0 0 24 24">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                </svg>
+                Sales Forecast
+            </a>
+            <a href="#" class="nav-item" data-tab="segmentation-tab">
+                <svg viewBox="0 0 24 24">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+                Customer Clusters
+            </a>
+            <a href="#" class="nav-item" data-tab="optimizer-tab">
+                <svg viewBox="0 0 24 24">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                    <polyline points="2 17 12 22 22 17"/>
+                    <polyline points="2 12 12 17 22 12"/>
+                </svg>
+                Menu Optimizer
+            </a>
+            <a href="#" class="nav-item" data-tab="simulator-tab">
+                <svg viewBox="0 0 24 24">
+                    <line x1="4" y1="21" x2="4" y2="14"/>
+                    <line x1="4" y1="10" x2="4" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="12"/>
+                    <line x1="12" y1="8" x2="12" y2="3"/>
+                    <line x1="20" y1="21" x2="20" y2="16"/>
+                    <line x1="20" y1="12" x2="20" y2="3"/>
+                    <line x1="1" y1="14" x2="7" y2="14"/>
+                    <line x1="9" y1="8" x2="15" y2="8"/>
+                    <line x1="17" y1="16" x2="23" y2="16"/>
+                </svg>
+                What-If Simulator
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <span>Powered by <strong>Scikit-Learn & Pandas</strong></span>
+            <span>Local Time: <span id="clock">19:45</span></span>
+        </div>
+    </aside>
+
+    <!-- Main Workspace Viewport -->
+    <main class="main-content">
+        <header class="app-header">
+            <div>
+                <h1 class="page-title" id="page-title-display">Restaurant Sales Portal</h1>
+                <p class="page-subtitle" id="page-subtitle-display">Core Business Analytics and Sales Operations</p>
+            </div>
+            <div class="date-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+                <span id="date-display">Today: 30-Day Window</span>
+            </div>
+        </header>
+
+        <!-- KPI Grid (Shared across tabs or main view reference) -->
+        <section class="stats-grid">
+            <div class="stat-card primary">
+                <h3>Total Revenue</h3>
+                <div id="metric-revenue" class="val neon-amber-text">$0.00</div>
+                <div class="desc">Gross sales generated past 30 days</div>
+            </div>
+            <div class="stat-card cyan">
+                <h3>Total Orders</h3>
+                <div id="metric-orders" class="val neon-cyan-text">0</div>
+                <div class="desc">Billed order transactions volume</div>
+            </div>
+            <div class="stat-card green">
+                <h3>Average Check</h3>
+                <div id="metric-avg-check" class="val neon-green-text">$0.00</div>
+                <div class="desc">Average ticket revenue per order item</div>
+            </div>
+            <div class="stat-card purple">
+                <h3>Average Rating</h3>
+                <div id="metric-rating" class="val neon-purple-text">0.0 / 5.0</div>
+                <div class="desc">Customer feedback satisfaction score</div>
+            </div>
+        </section>
+
+        <!-- ================= TAB 1: OVERVIEW ================= -->
+        <div id="overview-tab" class="tab-pane active">
+            <div class="card-row-2">
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h2>
+                            <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
+                            Daily Sales Trend
+                        </h2>
+                    </div>
+                    <div class="chart-wrapper">
+                        <div id="daily-sales-chart"></div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h2>
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2v10l4 4"/></svg>
+                            Revenue by Category
+                        </h2>
+                    </div>
+                    <div class="chart-wrapper">
+                        <div id="category-chart"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-row-2">
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h2>
+                            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg>
+                            Popular Menu Items
+                        </h2>
+                    </div>
+                    <div class="chart-wrapper">
+                        <div id="popular-items-chart"></div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h2>
+                            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            Transaction History
+                        </h2>
+                        <input type="text" id="search-input" class="table-search" placeholder="Search by item name or category...">
+                    </div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Item</th>
+                                    <th>Category</th>
+                                    <th>Qty</th>
+                                    <th>Amount</th>
+                                    <th>Payment</th>
+                                </tr>
+                            </thead>
+                            <tbody id="transaction-rows">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= TAB 2: FORECAST ================= -->
+        <div id="forecast-tab" class="tab-pane">
+            <div class="forecast-insights">
+                <div class="insight-card">
+                    <h4>7-Day Projected Sales</h4>
+                    <p id="forecast-projected-revenue">$0.00</p>
+                    <div class="subtitle">Summed future revenue for next week</div>
+                </div>
+                <div class="insight-card">
+                    <h4>Trend Trajectory</h4>
+                    <p id="forecast-trend-trajectory" style="color: var(--color-green);">Ascending (+4.2%)</p>
+                    <div class="subtitle">Growth compared to historical baseline</div>
+                </div>
+                <div class="insight-card">
+                    <h4>Model Accuracy</h4>
+                    <p id="forecast-model-accuracy">R² Score: 0.88</p>
+                    <div class="subtitle">Linear regression feature confidence</div>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <h2>
+                        <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        Predictive Sales Forecast (7-Day Projection)
+                    </h2>
+                </div>
+                <div class="chart-wrapper" style="min-height: 400px;">
+                    <div id="forecast-chart-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= TAB 3: CUSTOMER CLUSTERS ================= -->
+        <div id="segmentation-tab" class="tab-pane">
+            <div class="segmentation-grid">
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h2>
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                            K-Means Customer Segmentation (2D Profile Plot)
+                        </h2>
+                    </div>
+                    <div class="chart-wrapper" style="min-height: 400px;">
+                        <div id="segmentation-scatter-chart"></div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h2>
+                            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                            Discovered Customer Personas
+                        </h2>
+                    </div>
+                    <div class="cluster-cards-container" id="cluster-personas-list">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= TAB 4: MENU OPTIMIZER ================= -->
+        <div id="optimizer-tab" class="tab-pane">
+            <div class="basket-grid">
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h2>
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
+                            Menu Performance Grid (BCG Matrix)
+                        </h2>
+                    </div>
+                    <div class="chart-wrapper">
+                        <div id="optimizer-bubble-chart"></div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h2>
+                            <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                            Market Basket Recommendations
+                        </h2>
+                    </div>
+                    <div class="rec-card-list" id="recommendations-list">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-card" style="margin-top: 24px;">
+                <div class="card-header">
+                    <h2>
+                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+                        Menu Quadrant Analytics & Strategic Directives
+                    </h2>
+                </div>
+                <div class="table-wrapper" style="max-height: 400px;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Menu Item</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Volume Sold</th>
+                                <th>Total Sales</th>
+                                <th>Rating</th>
+                                <th>Menu Status</th>
+                                <th>Action Recommendation</th>
+                            </tr>
+                        </thead>
+                        <tbody id="optimizer-rows">
+                            <!-- Populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= TAB 5: WHAT-IF SIMULATOR ================= -->
+        <div id="simulator-tab" class="tab-pane">
+            <div class="simulator-layout">
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h2>
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                            Simulation Variables Selector
+                        </h2>
+                    </div>
+                    <div class="simulator-controls">
+                        <!-- Sliders -->
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <span>Pizza Price Adjustment</span>
+                                <span class="slider-val" id="pizza-val">$0.00</span>
+                            </div>
+                            <input type="range" id="slider-pizza" min="-3" max="5" step="0.5" value="0">
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <span>Burger Price Adjustment</span>
+                                <span class="slider-val" id="burger-val">$0.00</span>
+                            </div>
+                            <input type="range" id="slider-burger" min="-2" max="4" step="0.25" value="0">
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <span>Pasta Price Adjustment</span>
+                                <span class="slider-val" id="pasta-val">$0.00</span>
+                            </div>
+                            <input type="range" id="slider-pasta" min="-3" max="5" step="0.5" value="0">
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <span>Ramen Price Adjustment</span>
+                                <span class="slider-val" id="ramen-val">$0.00</span>
+                            </div>
+                            <input type="range" id="slider-ramen" min="-2" max="4" step="0.5" value="0">
+                        </div>
+
+                        <div class="slider-group" style="margin-top: 10px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.05);">
+                            <div class="slider-header">
+                                <span>Dinner Session Traffic Shift (Marketing Boost)</span>
+                                <span class="slider-val" id="dinner-val">0%</span>
+                            </div>
+                            <input type="range" id="slider-dinner" min="-20" max="30" step="5" value="0">
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <span>Customer Service Quality Shift (Average Rating)</span>
+                                <span class="slider-val" id="rating-val">+0.0</span>
+                            </div>
+                            <input type="range" id="slider-rating" min="0" max="1" step="0.1" value="0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="simulator-results">
+                    <div class="card-header" style="margin-bottom: 0px;">
+                        <h2>
+                            <svg viewBox="0 0 24 24"><polygon points="12 2 2 22 22 22 12 2"/></svg>
+                            Simulated Revenue & Rating Impact
+                        </h2>
+                    </div>
+
+                    <div class="result-metric-card">
+                        <div class="result-label">Predicted Month-End Revenue</div>
+                        <div class="result-values">
+                            <span class="sim-val-before" id="sim-revenue-before">$0.00</span>
+                            <span class="sim-val-arrow">→</span>
+                            <span class="sim-val-after neon-amber-text" id="sim-revenue-after">$0.00</span>
+                        </div>
+                        <div class="sim-change-badge neutral" id="sim-revenue-change-badge">+0.00%</div>
+                    </div>
+
+                    <div class="result-metric-card">
+                        <div class="result-label">Predicted Customer Satisfaction</div>
+                        <div class="result-values">
+                            <span class="sim-val-before" id="sim-rating-before">0.00 / 5.0</span>
+                            <span class="sim-val-arrow">→</span>
+                            <span class="sim-val-after neon-purple-text" id="sim-rating-after">0.00</span>
+                        </div>
+                        <div class="sim-change-badge neutral" id="sim-rating-change-badge">+0.00 Rating</div>
+                    </div>
+
+                    <button class="reset-btn" id="reset-sim-btn">Reset All Variables</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>
